@@ -1,0 +1,23 @@
+.card img{
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+.card{
+    height: 380px;
+    box-shadow: -2px 0px 8px -4px rgba(48,46,48,1);
+}
+.discription{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100ch;
+}
+.notfound{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btns{
+    width: 100%;
+}

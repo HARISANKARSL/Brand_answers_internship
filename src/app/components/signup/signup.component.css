@@ -1,0 +1,144 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua !important;
+}
+
+.container{
+   
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+  
+   
+   
+    
+    
+}
+.signup-sec{
+    width: 100%;
+    box-shadow: -3px 13px 23px -4px rgba(0,0,0,0.57);
+    
+}
+.signup-sec-left{
+    background-image: url('/assets/frame\ 1\ 1.png');
+    width: 900px;
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px 0 0 12px ;
+   
+}
+.signup-logo {
+height: 300px;
+width: 100%;
+position: relative;
+top: 80px;
+
+}
+.signup-img img{
+    position: absolute !important;
+    bottom: 0;
+}
+.signup-logo h3{
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 40px;
+    
+}
+.right-sec{
+    width: 600px;
+   
+   border-radius:  0 12px 12px 0  ;
+  
+
+}
+.signup{
+    font-size: 24px;
+}
+.right-sec input{
+    outline: none !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.btm-sec{
+color: #E08433;
+}
+.btm{
+    font-size: 14px;
+    font-weight: 400;
+}
+.btm-login-sec{
+    cursor: pointer;
+}
+.forms-sec input::placeholder{
+    font-size: 18px;
+    color: #868282;
+}
+.forms-sec .btn{
+    background-color: #E08433;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.password{
+position: relative;
+}
+.confirmpass{
+    position: relative;
+}
+.password-view{
+    position: absolute !important;
+    right:0 !important;
+    top: 0 !important;
+}
+.btm-lgin{
+    font-size: 18px;
+    
+}
+input.ng-invalid.ng-touched {
+    border: red 1px solid;
+}
+
+@media only screen and (max-width: 1000px) {
+   .signup-sec {
+      display: flex;
+      flex-direction: column;
+      width:600px;
+      height: 100vh;
+      margin-top: 25px;
+    
+    }
+    .signup-img img{
+        position: relative !important;
+       left: 0;
+    }
+    
+  
+    .right-sec{
+        min-width: 750px !important;
+        background-color: transparent;
+        padding: 0 !important;
+    }
+    .signup-logo{
+width: 100%;
+
+    }
+    .signup-sec-left{
+ 
+        max-width: 750px;
+      
+    }
+    .signup-sec{
+        width: 100%;
+        box-shadow: -3px 13px 23px -4px rgba(0,0,0,0.57);
+        height: 100vh;
+    }
+    
+  }

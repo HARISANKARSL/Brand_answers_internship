@@ -1,0 +1,14 @@
+
+:host ::ng-deep .mat-mdc-tab-body-content {
+    
+    overflow: hidden !important;
+}
+mat-card{
+    height: 150px;
+}
+.discription{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200ch;
+}

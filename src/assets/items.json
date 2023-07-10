@@ -1,0 +1,110 @@
+{
+    "offer":[{
+        "id":"0",
+        "img":"../assets/class.png",
+        "heading":"Sample Class",
+        "para":"Attend one or all of the available sample classes to get afeel for CUET Mentor. The courses last around an hour and arefree..",
+        "url":"vAoB4VbhRzM&t"
+        
+    },
+    {
+        "id":"1",
+        "img":"../assets/Group 34756.png",
+        "heading":"Sample Class",
+        "para":"Attend one or all of the available sample classes to get afeel for CUET Mentor. The courses last around an hour and arefree..",
+        "url":"https://www.youtube.com/watch?v=vAoB4VbhRzM&ab_channel=Fireship"
+    },
+    {
+        "id":"2",
+        "img":"../assets/live.png",
+        "heading":"Sample LIVE Class",
+        "para":"Attend one or all of the available sample classes to get afeel for CUET Mentor. The courses last around an hour and arefree..",
+        "url":"https://www.youtube.com/watch?v=vAoB4VbhRzM&ab_channel=Fireship"
+        
+    },
+    {
+        "id":"3",
+        "img":"../assets/pool.png",
+        "heading":"Instructors",
+        "para":"Attend one or all of the available sample classes to get afeel for CUET Mentor. The courses last around an hour and arefree..",
+        "url":"https://www.youtube.com/watch?v=vAoB4VbhRzM&ab_channel=Fireship"
+        
+        
+    }],
+    "course":[{
+        "imges":"../assets/course.png",
+     "price":"₹ 34,999",
+     "gst":"incl. GST",
+     "offr":"₹ 39,99",
+     "disc":"(Launch Discount)"
+
+    },
+    {
+        "imges":"../assets/course.png",
+        "price":"₹ 34,999",
+        "gst":"incl. GST",
+        "offr":"₹ 39,99",
+        "disc":"(Launch Discount)"
+   
+       },
+       {
+        "imges":"../assets/course.png",
+        "price":"₹ 34,999",
+        "gst":"incl. GST",
+        "offr":"₹ 39,99",
+        "disc":"(Launch Discount)"
+   
+       },
+       {
+        "imges":"../assets/course.png",
+        "price":"₹ 34,999",
+        "gst":"incl. GST",
+        "offr":"₹ 39,99",
+        "disc":"(Launch Discount)"
+   
+       },
+       {
+        "imges":"../assets/course.png",
+        "price":"₹ 34,999",
+        "gst":"incl. GST",
+        "offr":"₹ 39,99",
+        "disc":"(Launch Discount)"
+   
+       },
+       {
+        "imges":"../assets/course.png",
+        "price":"₹ 34,999",
+        "gst":"incl. GST",
+        "offr":"₹ 39,99",
+        "disc":"(Launch Discount)"
+   
+       }
+],
+"subject":[
+   
+    {
+        "imges":"../assets/Group 34924.png"
+    },
+    {
+        "imges":"../assets/Group 34925.png"
+    },
+    {
+        "imges":"../assets/Group 34926.png"
+    },
+    {
+        "imges":"../assets/Group 34927.png"
+    },
+    {
+        "imges":"../assets/Group 34928.png"
+    },
+    {
+        "imges":"../assets/Group 34929.png"
+    },
+    {
+        "imges":"../assets/Group 34930.png"
+    },
+    {
+        "imges":"../assets/Group 34924.png"
+    }
+]
+}

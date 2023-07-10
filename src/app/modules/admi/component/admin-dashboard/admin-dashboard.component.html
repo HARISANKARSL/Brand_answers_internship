@@ -1,0 +1,131 @@
+
+<div class="container-fluid">
+    <div class="nav-sec">
+        <nav class="navbar navbar-expand-lg bg-light ">
+            <div class="container-fluid ">
+              <a class="navbar-brand " href="#">Dash Board</a>
+             
+            </div>
+          </nav>
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+             
+              
+                
+<div class="container-fluid">
+  <div class="row">
+      <div class="  col-2">
+        <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas"  data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+          <span ><i class="fa fa-thin fa-sliders"></i></span>
+        </button>
+        
+        <div>
+         
+  <nav id="sidebarMenu" class="  p-3 ">
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+      <div class="offcanvas-header">
+       
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+     <div class="offcanvas-body">
+      <div class=" " id="navbarSupportedContent">
+        <div class="d-grid gap-4   sidenav ">
+          <button class="btn d-block   text-start">
+            <i class="fas fa-tachometer-alt fa-fw ms-0"></i><span class="ms-3 " > dashboard</span>
+          </button>
+          <button class="btn d-block   text-start">
+            <i
+  class="fas fa-chart-line fa-fw ms-0"></i><span class="ms-3">Analytics</span>
+          </button>
+          <button class="btn d-block text-start">
+            <i
+            class="fas fa-lock fa-fw "></i><span class="ms-3">Password</span>
+          </button>
+          <button class="btn d-block  text-start">
+            <i class="fas fa-chart-pie fa-fw "></i><span class="ms-3">SEO</span>
+          </button>
+          <button class="btn d-block   text-start">
+            <i class="fas fa-chart-bar fa-fw "></i><span class="ms-3">Orders</span>
+          </button>
+          <button class="btn d-block   text-start">
+            <i class="fas fa-globe fa-fw"></i><span class="ms-3">International</span>
+          </button>
+          <button class="btn d-block   text-start">
+            <i class="fas fa-building fa-fw "></i><span class="ms-3">Partners</span>
+          </button>
+          <button class="btn d-block   text-start">
+            <i class="fas fa-calendar fa-fw "></i><span class="ms-3">Calendar</span>
+          </button>
+          <button class="btn d-block   text-start">
+            <i
+            class="fas fa-users fa-fw "></i><span class="ms-3">Users</span> 
+          </button>
+          <button class="btn d-block   text-start">
+            <i class="fas fa-money-bill fa-fw "></i ><span class="ms-3">Sales</span>
+          </button>
+      </div> 
+      
+     
+    </div> 
+     </div>
+    </div>
+      
+    </nav>
+       
+        </div>
+      </div>
+      <div class=" col-10 p-4 shadow min-hv-100">
+         <div class="row ">
+          <div class="col-md-6 mt-2">
+            <mat-card>
+               <canvas id="barchart"></canvas>
+              </mat-card>
+              
+        </div>
+          <div class="col-md-6 mt-2">
+              <mat-card class="d-flex align-items-center ">
+                 <canvas id="piechart"></canvas>
+                </mat-card>
+                
+          </div>
+         
+         </div>
+
+
+         <div class="row mt-3 ">
+          <div class="col-md-6 mt-2">
+            <mat-card>
+               <canvas id="doughnut"></canvas>
+              </mat-card>
+              
+        </div>
+          <div class="col-md-6 mt-2">
+              <mat-card class="d-flex align-items-center ">
+                 <canvas id="polarArea"></canvas>
+                </mat-card>
+                
+          </div>
+         
+         </div>
+         <select [(ngModel)]="lessThanOrGreaterThan" style="width: 150px;height: 30px;">
+          <option value='lessThan'>Less Than</option>
+          <option value='greaterThan'>Greater Than</option>
+        </select>&nbsp;&nbsp;
+        <input [(ngModel)]="filterLimit" placeholder="Filter Limit" style="width: 150px;height: 30px;"><br><br>
+        <button class="button" (click)="applyFilter(filterLimit)">Apply Filter</button>
+      
+      </div>
+    </div>
+</div>
+            </div>
+          </nav>
+    </div>
+
+</div>
+
+
+
+
+
+
+

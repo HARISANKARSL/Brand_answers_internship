@@ -1,0 +1,10 @@
+.sidenav button:hover{
+    background-color:rgb(61, 206, 235) ;
+}
+canvas{
+    height: 300px !important;
+    
+}
+.offcanvas{
+    width: 250px;
+}

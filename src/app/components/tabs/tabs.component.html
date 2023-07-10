@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <mat-tab-group #tabGroup>
+        <mat-tab label="First">
+        <div class="row p-3" >
+          
+            <div class="col-md-3 col-lg-3 col-sm-12 my-3" *ngFor="let items of allProducts" >
+                <mat-card class="example-card">
+                    <mat-card-header class="text-start">
+                      
+                      <h1  class="discription">{{items.title}}</h1>
+                   
+                    </mat-card-header>
+                  
+                    <mat-card-content class="discription">
+                      {{items.body}}
+                    </mat-card-content>
+                    <mat-card-actions>
+                      
+                        <button mat-raised-button color="accent" (click)="goToTab3(tabGroup)">Click</button>
+                    
+                    </mat-card-actions>
+                  </mat-card>
+                  
+                  
+            </div>
+        </div>
+        </mat-tab>
+        <mat-tab label="Second"> Content 2 </mat-tab>
+        <mat-tab label="Third"> 
+        <div class="container">
+         <div class="row">
+          <div class="col-md-3" *ngFor="let carts of cart">
+            <div class="card" style="width: 18rem;">
+              <img src="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+           </div>
+         </div>
+        </div>  
+        </mat-tab>
+      </mat-tab-group>
+      
+</div>

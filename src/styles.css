@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+.owl-prev {
+    position: absolute !important;
+    top: 40% !important;
+    left: 0 !important;
+    padding: 0 !important;
+    margin:  0 !important;
+    color: #A8C8EA !important;
+ 
+    font-size: 32px !important;
+    background-color: transparent !important;
+  }
+  .owl-next {
+    position: absolute !important;
+    top: 40% !important;
+    right: 0 !important;
+    border-radius: 50% !important;
+    color: #A8C8EA !important;
+ padding: 0 !important;
+ margin:  0 !important;
+    font-size: 32px !important;
+    background-color: transparent !important;
+  }
+  
+element.style {
+    width: 231px;
+}
+.owl-carousel .owl-item {
+    min-height: 0 !important;
+}
+@import 'ngx-toastr/toastr';
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

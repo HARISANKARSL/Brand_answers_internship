@@ -1,0 +1,110 @@
+.navbar {
+    width: 100%;
+
+ 
+
+}
+@media only screen and (max-width: 1000px) {
+    .top-nav{
+        position: absolute;
+        top: 50px !important;
+        right: 50px !important;
+    }.top-nav li{
+        margin-right:  0 !important;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .top-nav{
+       display: none !important;
+  }
+  .logos{
+    position: absolute;
+    left: 0 !important;
+   
+  }
+  .logos li{
+    margin-top: 20px !important;
+  }
+  .signup .btn{
+    display: block;
+    margin: 10px;
+    margin-left: 0 !important;
+    min-width: 250px !important;
+  }
+}
+.nav-link{
+    font-size: 18px;
+    color: #20428C;
+    font-weight: 400;
+}
+.navbar-nav .btn{
+    background-color: #E08433;
+    width: 122px;
+    height: 35px;
+    
+}
+.btn-otln{
+   
+    border: 1px solid #E08433 ;
+    background-color: white !important;
+    color: #E08433;
+ 
+}
+
+
+.btn-label {
+	position: relative;
+	left: 12px;
+	display: inline-block;
+	padding: 6px 12px;
+	background: rgba(0, 0, 0, 0.15);
+    font-size: 18px;
+   
+	
+}
+
+.btn-labeled {
+	padding-top: 0;
+	padding-bottom: 0;
+    border-radius:10px;
+    overflow: hidden;
+    background-color: #4F7FE9;
+    margin-right: 50px !important;
+}
+
+
+.top-nav{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+.top-nav li{
+  margin-right: 20px !important;
+    list-style: none;
+    margin-top: 10px;
+   
+    color: #fff;
+  
+}
+.top-nav li a{
+    padding: 5px !important;
+    list-style: none;
+    font-size: 15px;
+    color: #fff;
+    background-color: gray;
+    border-radius: 50%;
+}
+.logos{
+    position: absolute;
+ 
+    left: 50px;
+    bottom: 40px;
+    font-size: 18px;
+    color: #E08433;
+}
+.logo-s{
+    position: relative;
+}
+.offcanvas{
+    width: 300px !important;
+}

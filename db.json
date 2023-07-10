@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "name": "user",
+      "mobile": 12345,
+      "email": "user@gmail.com",
+      "password": "User@123",
+      "confirmpassword": "User@123",
+      "id": 4
+    },
+    {
+      "name": "user1",
+      "mobile": 12345,
+      "email": "user1@gmail.com",
+      "password": "User1@123",
+      "confirmpassword": "User1@123",
+      "id": 5
+    },
+    {
+      "name": "user5",
+      "mobile": "1234567890",
+      "email": "user5@gmail.com",
+      "password": "User5@123",
+      "confirmpassword": "User5@123",
+      "id": 6
+    }
+    
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

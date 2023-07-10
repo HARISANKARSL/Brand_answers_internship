@@ -1,0 +1,88 @@
+
+    <div class="container">
+    <div class="signup-sec d-flex ">
+      <div class="signup-sec-left ">
+        <div class="signup-logo d-flex flex-column  align-items-end   px-5">
+        <img src="/assets/CUET reverse logo 1.png" alt="" width="193px " height="119px">
+        <h3 class="text-light text-end mt-5 ">Join now <br>
+            and crack CUET <br> with  flying colors</h3>
+        </div>
+        <div class="signup-img">
+            <img src="/assets/image 11 (1).png" class="p-1" alt="" height="420px" width="597px">
+        </div>
+      </div>
+      <div class="right-sec  bg-white">
+       
+        <div class="forms-sec px-5 my-5">
+            
+            <form  class="" [formGroup]="signUpForm" (ngSubmit)="signUp(signUpForm.value)">
+                <h5 class="text-dark text-center signup h4 fw-bold">Sign Up</h5>
+                    <div class="mb-3   mt-5 " >
+                     
+                      <input type="text" class="form-control p-3" id="exampleInputEmail1" formControlName="name" aria-describedby="emailHelp" placeholder="Name*">
+                      <div *ngIf="f['name'].touched && f['name'].invalid" class="text-danger ">
+                        <div *ngIf="f['name'].errors && f['name'].errors['required']">Name is required*.</div>
+                        <div *ngIf="f['name'].errors && f['name'].errors['minlength']">Name should be 3 character*.</div>
+                        <div *ngIf="f['name'].errors && f['name'].errors['maxlength']">Name should only 15 character*.</div>
+                    </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" (keypress)="onlyNumbers($event)" class="form-control p-3" id="exampleInputEmail1" formControlName="mobile" aria-describedby="emailHelp" placeholder="Mobile Number*">
+                        <div *ngIf="f['mobile'].touched && f['mobile'].invalid" class="text-danger mb-0">
+                          <div *ngIf="f['mobile'].errors && f['mobile'].errors['required']">Number is required*.</div>
+                          <div *ngIf="f['mobile'].errors && f['mobile'].errors['pattern']">Number should be 10 character*.</div>
+                          <div *ngIf="f['mobile'].errors && f['mobile'].errors['maxlength']">Number should only 10 character*.</div>
+                          <div *ngIf="f['mobile'].errors && f['mobile'].errors['maxlength']">Invalid number*.</div>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control p-3" id="exampleInputEmail1" formControlName="email" aria-describedby="emailHelp" placeholder="Email address*">
+                        <div *ngIf="f['email'].touched && f['email'].invalid" class="text-danger ">
+                          <div *ngIf="f['email'].errors && f['email'].errors['required']">Email is required*.</div>
+                          <div *ngIf="f['email'].errors && f['email'].errors['email']">Invalid email*.</div>
+                          
+                      </div>
+                    </div>
+                    <div class="mb-3 password">
+                        <input type="password" matInput [type]="passwordShow ? 'password' : 'text'" class="form-control p-3"  formControlName="password" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Password*">
+                        <a class="password-view" mat-icon-button matSuffix (click)="passwordShow = !passwordShow" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="passwordShow">
+                          <mat-icon>{{passwordShow ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </a>
+                        <div *ngIf="f['password'].touched && f['password'].invalid" class="text-danger ">
+                          <div *ngIf="f['password'].errors && f['password'].errors['required']">Password is required*.</div>
+                          <div *ngIf="f['password'].errors && f['password'].errors['pattern']">Password must contain more than 8 characters,1uppercase letter,and 1 special character*.</div>
+                          
+                      </div>
+                    </div>
+                    <div class="mb-3 confirmpass">
+                        <input type="password" matInput [type]="confirmpass ? 'password' : 'text'" class="form-control p-3" formControlName="confirmpassword" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Re-enter Password*">
+                        <a class="password-view" mat-icon-button matSuffix (click)="confirmpass = !confirmpass" [attr.aria-label]="'Hide confirmpass'" [attr.aria-pressed]="confirmpass">
+                          <mat-icon>{{confirmpass ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </a>
+                        <div *ngIf="f['confirmpassword'].touched && f['confirmpassword'].invalid" class="text-danger ">
+                          <div *ngIf="f['confirmpassword'].errors && f['confirmpassword'].errors['required']">Password is required*.</div>
+                          <div *ngIf="f['confirmpassword'].errors && f['confirmpassword'].errors['passwordMatchError']">Password Missmatch*.</div>
+                        
+                         
+                         
+                          
+                      </div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary p-2 mt-2" type="submit" [disabled]="signUpForm.invalid" >Sign Up</button>
+                       
+                      </div>
+                      <div class="btm">
+                        <p class="mt-3">By clicking the “Sign up” button, you are creating a CUET Mentor account, and you agree to CUET Mentor’s <span class="btm-sec">Terms of Use</span> and <span class="btm-sec">Privacy Policy</span></p>
+                        <p class="text-center btm-lgin">Already a member? <span class="btm-sec btm-login-sec" routerLink="/login">Login</span ></p>
+                        
+                      </div>
+                  
+            </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+
+

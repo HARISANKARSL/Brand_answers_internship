@@ -1,0 +1,372 @@
+<app-navbar></app-navbar>
+<ngx-spinner
+  bdColor="rgba(0, 0, 0, 1)"
+  template="<img src='https://cdn.dribbble.com/users/886358/screenshots/2980235/loading.gif' />"
+>
+</ngx-spinner>
+
+<div class="container-fluid p-0">
+  <div class="home-sec">
+    <!-- banner starts-->
+    <div class="banner-sec">
+      <div class="banner-top">
+        <div class="container">
+          <div class="row">
+            <div class="col banners ms-3 mt-4">
+              <h4 class="text-light ms-5">
+                Search YOUR DESIRED <br />
+                University/COURSE FOR ADMISSION
+              </h4>
+            </div>
+            <div class="col text-end mt-4">
+              <label>
+                <input type="radio" name="radio-button" value="University" />
+                <span class="text-light">University </span>
+              </label>
+              <label>
+                <input type="radio" name="radio-button" value="Course" />
+                <span class="text-light">Course</span>
+              </label>
+            </div>
+          </div>
+          <div class="input-container">
+            <input
+              type="text"
+              class="form-control ms-5 p-2"
+              id="formGroupExampleInput"
+              placeholder="Search.."
+            /><i
+              class="fa search-icon fa-thin fa-magnifying-glass me-5 pe-2"
+            ></i>
+            <i class="fa fa-duotone fa-chevron-down icon text-dark"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="banner-content px-5">
+          <h2 class="h1 text-light mt-5">
+            Only dedicated CUET <br />
+            Mentorship providers in India
+          </h2>
+        </div>
+        <div class="banner-logos d-flex align-items-end">
+          <li class="mx-4 logos">
+            <img
+              src="/assets/General Test-ICON.png"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+            <span class="live-logo"
+              ><img src="/assets/Frame.png" alt="" />
+              <p></p
+            ></span>
+            <p class="text-white text-center">
+              General Test <br />
+              and English
+            </p>
+          </li>
+          <li class="mx-4 logos">
+            <img
+              src="/assets/Doubt clearing-ICON.png"
+              alt=""
+              width="100px"
+              height="100px"
+            /><span class="doubt-logo"
+              ><img src="/assets/Frame.png" alt=""
+            /></span>
+            <p class="text-white text-center">
+              General Test <br />
+              and English
+            </p>
+          </li>
+          <li class="mx-4 logos">
+            <img
+              src="/assets/Weekly Test-ICON.png"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+            <p class="text-white text-center">
+              General Test <br />
+              and English
+            </p>
+          </li>
+          <li class="mx-4 logos">
+            <img
+              src="/assets/Monthly Test-ICON.png"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+            <p class="text-white text-center">
+              General Test <br />
+              and English
+            </p>
+          </li>
+          <li class="mx-4 logos">
+            <img
+              src="/assets/Full Test-ICON.png"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+            <p class="text-white text-center">
+              General Test <br />
+              and English
+            </p>
+          </li>
+          <li class="mx-4 logos">
+            <img
+              src="/assets/AI-ICON.png"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+            <p class="text-white text-center">
+              General Test <br />
+              and English
+            </p>
+          </li>
+          <li class="mx-4 logos">
+            <img
+              src="/assets/Metors-ICON.png"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+            <p class="text-white text-center">
+              General Test <br />
+              and English
+            </p>
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <!-- banner ends -->
+
+    <!-- cardsec  -->
+    <div class="card-sec my-5 mx-5">
+      <h1 class="text-center py-3 headings">What we offer</h1>
+      <div class="row">
+        <div
+          class="col-sm-12 col-lg-3 col-md-6 d-flex align-items-center justify-content-center my-2"
+          *ngFor="let items of data"
+        >
+          <div class="card">
+            <img
+              src="{{ items.img }}"
+              class="card-img-top"
+              alt="..."
+              height="210px"
+            />
+
+            <img
+              src="assets/video-icon.png"
+              class="video-icon"
+              (click)="openDialog(items.url)"
+              alt=""
+              width="40px"
+              height="40px"
+            />
+
+            <h5 class="card-title card-heading p-2 mb-0">
+              {{ items.heading }}
+            </h5>
+            <p class="card-text mt-2 p-2">
+              {{ items.para }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card end -->
+
+    <!-- course -->
+    <div class="container-fluid course">
+      <h1 class="text-center py-3 headings">Courses</h1>
+
+      <owl-carousel-o [options]="customOptions" class="mx-5">
+        <ng-template carouselSlide *ngFor="let course of courses">
+          <div class="card mb-2 mx-5">
+            <img src="{{ course.imges }}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-danger">
+                {{ course.price }}<span>{{ course.gst }}</span>
+              </h5>
+              <div class="box">
+                <span
+                  >{{ course.offr }}
+                  <span class="ms-2">{{ course.disc }}</span></span
+                >
+                <div class="line1"></div>
+                <div class="line2"></div>
+              </div>
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#courseModal"
+                class="btn mx-2 mt-3 text-light"
+                type="button"
+              >
+                BUY NOW!
+              </button>
+            </div>
+          </div>
+        </ng-template>
+
+        <ng-template carouselSlide> </ng-template>
+      </owl-carousel-o>
+      <!-- course model -->
+      <!--  -->
+      <div class="modal-dialog" style="width: 600px !important">
+        <div
+          class="modal fade text-light"
+          id="courseModal"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1
+                  class="modal-title fs-5 text-light text-center mb-0"
+                  id="staticBackdropLabel"
+                >
+                  Confirm Purchase
+                </h1>
+
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-6 col-sm-12">
+                    <div class="contents">
+                      <p class="my-1 headings">Chosen bundle</p>
+                      <h4 class="my-1 h2 fw-bold sp">Science Program</h4>
+                      <p class="my-2">Physics, Chemistry, Biology</p>
+
+                      <div class="btm mt-5">
+                        <p class="mt-5 headings display-3">
+                          Additional subjects you might require
+                        </p>
+                        <div class="row">
+                          <div class="col-6">
+                            <label>
+                              <input
+                                type="radio"
+                                name="radio-button"
+                                value="University"
+                              />
+                              <span class="">English </span>
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <label>
+                              <input
+                                type="radio"
+                                name="radio-button"
+                                value="maths"
+                              />
+                              <span class="">Mathematics</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-6">
+                            <label>
+                              <input
+                                type="radio"
+                                name="radio-button"
+                                value="University"
+                              />
+                              <span class="">General Test </span>
+                            </label>
+                          </div>
+                          <div class="col-6">
+                            <label>
+                              <input
+                                type="radio"
+                                name="radio-button"
+                                value="maths"
+                              />
+                              <span class="">Others...</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12 contents contents-right">
+                    <div class="row">
+                      <div class="col-7 p-2">
+                        <p>
+                          Science Program <br />
+                          (Physics + Chemistry + Biology)
+                        </p>
+                      </div>
+
+                      <div class="col-5 p-2">
+                        <p class="h6 text-end display-5 fw-bold">
+                          ₹ 34,999 <br />
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row botm">
+                      <hr />
+                      <div class="col-6">
+                        <h4 class="my-1 h3 fw-bold m-0">Total</h4>
+                      </div>
+                      <div class="col-6 text-end">
+                        <h4 class="my-1 h3 fw-bold m-0">
+                          ₹ 48,997 <br />
+                          <span class="ms-2">incl. GST</span>
+                        </h4>
+                      </div>
+                      <div class="btmsec">
+                        <p class="text-center mb-0">You saved ₹5000!</p>
+                        <button class="btn mt-1 text-light" type="button">
+                          BUY NOW!
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- course model ends -->
+    </div>
+    <!-- user end -->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+
+    <!-- Subjects -->
+    <div class="container-fluid">
+      <h1 class="text-center py-3 headings">Subjects</h1>
+
+      <owl-carousel-o [options]="option">
+        <ng-template carouselSlide *ngFor="let subject of subjects">
+          <div class="container text-center mb-5">
+            <div class="cards mx-5">
+              <img src="{{ subject.imges }}" class="card-img-top" alt="..." />
+            </div>
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+    </div>
+  </div>
+</div>
